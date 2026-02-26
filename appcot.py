@@ -10,15 +10,15 @@ import cloudinary.uploader
 # 🔐 1. CONFIGURACIÓN DE SEGURIDAD (SECRETS)
 # ==========================================
 try:
-    # Airtable
-    AIRTABLE_PAT = st.secrets["patsqGyB1HPsSS9zm.4fa6af42946edf4dfb5a61af75f61e3670bfd0ddac0febedd6d94ab0e01343ba"]
-    AIRTABLE_BASE_ID = st.secrets["appY6cQfQdXpmMlwD/tblSokd4iiChYPrOk"]
+# Airtable
+    AIRTABLE_PAT = st.secrets["AIRTABLE_PAT"]
+    AIRTABLE_BASE_ID = st.secrets["AIRTABLE_BASE_ID"]
     AIRTABLE_TABLE_NAME = "Cotizaciones"
 
     # Cloudinary
-    CLOUD_NAME = st.secrets["dgowkt8nm"]
-    API_KEY = st.secrets["937683936737541"]
-    API_SECRET = st.secrets["3NcKjXbQAubzYRajbLHKsJ_Y-_U"]
+    CLOUD_NAME = st.secrets["CLOUD_NAME"]
+    API_KEY = st.secrets["API_KEY"]
+    API_SECRET = st.secrets["API_SECRET"]
 
     # Inicializar Cloudinary
     cloudinary.config(
