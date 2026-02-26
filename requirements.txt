@@ -1,0 +1,5 @@
+streamlit
+Pillow
+fpdf2
+pyairtable
+cloudinary
