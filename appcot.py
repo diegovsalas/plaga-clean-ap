@@ -210,4 +210,4 @@ if st.button("Generar Cotización y Guardar en Airtable", type="primary", use_co
                 )
                 
             except Exception as e:
-                st.error(f"❌ Error al conectar con Airtable. Verifica tus Secrets.")
+                st.error(f"❌ Detalle exacto de Airtable: {e}")
