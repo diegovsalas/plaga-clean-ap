@@ -28,7 +28,7 @@ try:
         secure=True
     )
 except Exception as e:
-    st.error("⚠️ La aplicación se está ejecutando en modo local o faltan los Secrets en la nube.")
+    st.error(f"⚠️ Detalle exacto del error: {e}")
 
 # ==========================================
 # ⚙️ 2. FUNCIONES DE APOYO
