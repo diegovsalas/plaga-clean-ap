@@ -1,0 +1,11 @@
+# Entorno virtual
+.venv/
+__pycache__/
+*.pyc
+
+# Archivos de datos locales
+folio.txt
+*.pdf
+
+# Archivos de sistema
+.DS_Store
