@@ -158,7 +158,11 @@ if st.button("Generar Cotización y Guardar en Airtable", type="primary", use_co
                 temp_pdf = f"Cotizacion_{folio_actual}.pdf"
                 with open(temp_pdf, "wb") as f:
                     f.write(pdf_bytes)
-                res_pdf = cloudinary.uploader.upload(temp_pdf, resource_type="auto")
+                res_pdf = cloudinary.uploader.upload(
+                temp_pdf, 
+                resource_type="image",
+                format="pdf"
+                )
                 pdf_url = res_pdf["secure_url"]
                 os.remove(temp_pdf)
                 
