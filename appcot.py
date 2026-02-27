@@ -168,8 +168,8 @@ if st.button("Generar Cotización y Guardar en Airtable", type="primary", use_co
                         res_img = cloudinary.uploader.upload(foto.getvalue())
                         fotos_urls.append({"url": res_img["secure_url"]})
             except Exception as e:
-                st.warning(f"Error al subir archivos a la nube. Verifica tus Secrets.")
-
+                st.warning(f"⚠️ Detalle exacto de Cloudinary: {e}")
+                
         # 3. Enviar a Airtable
         with st.spinner("Guardando registro en Airtable..."):
             try:
